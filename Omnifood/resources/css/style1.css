@@ -91,7 +91,7 @@ h1 {
 /*---------------------------- */
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) ,  url(img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) ,  url(img/hero.jpg);  /*bg image inserted*/
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -103,4 +103,28 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+/*Logo on the top left */
+.logo{
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+/* top right navigation bar*/
+.main-nav {
+    float: right;      /*get the navigation float to the right*/
+    list-style: none;  /*get rid of bullet points*/
+    margin-top: 55px;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav li{
+  display: inline-block; /*to display in block hori/*Navigation elements css*/
+  margin-left: 40px;  /*to give margin in the elements*/
+  color: #fff; /*giving color to the elements*/
+  text-decoration: none;
+  text-transform: uppercase;  /*Font is made uppercase*/
+  font-size: 90%; /*font size is 20px(mentioned in html) we want 18px (18/20=90%)*/
+
 }
