@@ -1,0 +1,26 @@
+
+/*Big tablet to 1200px:(widths smaller than 1140px row)*/
+@media only screen and (max-width:1200px){
+  .hero-text-box {
+      width: 100%;
+      padding: 0 2%; /*Top Bottom is 0 and Left and right is 2%(Space between the text and bottom) */
+  }
+}
+
+/*Small Tablet to big tablet:from 768pxx to 1023px*/
+@media only screen and (max-width:1023px){
+
+}
+
+/*Small phones to Small Tablets: from 481px to 767*/
+@media only screen and (max-width:767px){
+
+}
+
+
+/*Small phones: from 0 to 480px */
+@media only screen and (max-width:480px) {
+  /*all the styles go in this declaration block*/
+
+
+}

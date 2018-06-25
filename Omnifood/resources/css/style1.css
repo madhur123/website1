@@ -2,10 +2,10 @@
 /*BASIC SETUP */
 /*---------------------------- */
 
-
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
 }
@@ -23,7 +23,7 @@ html {
 /*----------------------------- */
 /*REUSABLE COMPONENTS*/
 /*---------------------------- */
-.row {    /*this class is used in the entire code so its REUSABLE*/
+.row {    /*this div class is used in the entire code so its REUSABLE*/
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -91,6 +91,7 @@ h3{
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s ;
   transition: background-color 0.2s, border 0.2s, color 0.2s ;
 }
 
@@ -133,6 +134,7 @@ h3{
 /*---------------------------- */
 
 header {
+  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.8)),to(rgba(0, 0, 0, 0.8))) ,  url(img/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) ,  url(img/hero.jpg);  /*bg image inserted*/
   background-size: cover;
   background-position: center;
@@ -145,7 +147,7 @@ header {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    -ms-transform:translate(-50%,-50%);
     transform: translate(-50%, -50%); /*translate is used to move an element from its current position depending on the x and y coordinates */
 }
 
@@ -177,6 +179,7 @@ header {
     text-transform: uppercase; /*to make text uppercase*/
     font-size: 90%;
     border-bottom: 2px solid transparent; /*Make the border transparent when only visited */
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
