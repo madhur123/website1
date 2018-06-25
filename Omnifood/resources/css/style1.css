@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 html {
@@ -22,26 +23,67 @@ html {
 /*----------------------------- */
 /*REUSABLE COMPONENTS*/
 /*---------------------------- */
-.row {
+.row {    /*this class is used in the entire code so its REUSABLE*/
   max-width: 1140px;
   margin: 0 auto;
+}
 
+section{
+  padding: 50px 0; /*Usually margin is used*/
+  height: 100vh; /*makes the whole division be in a single page*/
 }
 
 /*----HEADINGS-----*/
 
-h1 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: #fff;
-  font-size: 240%;
+h1,h2 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+h1{
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 300%;
   word-spacing: 4px;
 }
 
+h2{
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2:after{
+  display: block;
+  height: 2px;
+  background-color: #d35400;
+  content: " "; /*after pseudo class need to mention the content and dont want any content so left behind */
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+/*
+h3{
+  font-size: 250%;
+  word-spacing: 2px;
+  background-color: #343a40;
+  text-align: center;
+  color: #ffffff;
+} */
+/*----PARAGRAPH----*/
+
+.aboutcopy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  word-spacing: 3px;
+}
+
 /*----BUTTONS----*/
+
 .btn:link,
 .btn:visited  {
   display: inline-block;
@@ -97,13 +139,16 @@ header {
   height: 100vh;
 }
 
-.hero-text-box{
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /*translate is used to move an element from its current position depending on the x and y coordinates */
 }
+
 /*Logo on the top left */
 .logo{
   height: 100px;
@@ -139,3 +184,14 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22; /*Make the color go orange when active*/
 }
+
+/*------------------*/
+/*--FORMS---*/
+/*----------------*/
+/*
+.loginclass {
+  background-color: #343a40;
+  text-align: center;
+  color: #ffffff;
+}
+*/
