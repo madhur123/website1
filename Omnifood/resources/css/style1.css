@@ -31,6 +31,7 @@ html {
 section{
   padding: 50px 0; /*Usually margin is used*/
   height: 100vh; /*makes the whole division be in a single page*/
+  background-size: cover;
 }
 
 /*----HEADINGS-----*/
@@ -53,18 +54,19 @@ h2{
   font-size: 180%;
   word-spacing: 2px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 h2:after{
   display: block;
   height: 2px;
   background-color: #d35400;
-  content: " "; /*after pseudo class need to mention the content and dont want any content so left behind */
+  content: " "; /*after pseudo class need to mention the content and dont want any content so left behind (we only want the line) */
   width: 100px;
   margin: 0 auto;
   margin-top: 30px;
 }
+
 /*
 h3{
   font-size: 250%;
@@ -83,7 +85,7 @@ h3{
 }
 
 /*----BUTTONS----*/
-
+/*
 .btn:link,
 .btn:visited  {
   display: inline-block;
@@ -118,7 +120,7 @@ h3{
 .btn-full:hover,
 .btn-full:active {
 
-  border: 1px sold #5c2500;
+  border: 1px solid #5c2500;
 
 }
 
@@ -127,7 +129,7 @@ h3{
 {
   border: 1px solid #d35400;
   color: #fff;
-}
+} */
 
 /*----------------------------- */
 /*HEADER*/
@@ -136,7 +138,7 @@ h3{
 header {
   background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.8)),to(rgba(0, 0, 0, 0.8))) ,  url(img/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)) ,  url(img/hero.jpg);  /*bg image inserted*/
-  background-size: cover;
+  background-size: cover; /*resizes the bg image to make sure element is fully covered*/
   background-position: center;
   height: 100vh;
 }
@@ -191,10 +193,48 @@ header {
 /*------------------*/
 /*--FORMS---*/
 /*----------------*/
-/*
-.loginclass {
-  background-color: #343a40;
-  text-align: center;
-  color: #ffffff;
+
+form {
+
+  text-align: center;  /*the content of the form are aligned in center*/
+  margin-bottom: 20px;
 }
-*/
+/*For input fields */
+input[type=email],input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #d35400;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer; /* when you go to the button it goes like its being pointed */
+  width: 30%;
+
+}
+
+button:hover {
+  opacity: 0.8; /* opacity defines how transparent an element is */
+}
+
+.imgcontainer {
+  text-align: center; /*image is now centered*/
+  margin: 24px 0 12px 0;
+  position: relative;/*the close button is positioned relative*/
+}
+
+.usericon {
+  width: 15%;
+  border-radius: 40px;
+}
+
+.container {
+  padding: 16px;
+}

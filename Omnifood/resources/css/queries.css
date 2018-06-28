@@ -5,11 +5,23 @@
       width: 100%;
       padding: 0 2%; /*Top Bottom is 0 and Left and right is 2%(Space between the text and bottom) */
   }
+  .row {
+    padding: 0 2%; /*for all tags in the row class (ex : SIEMENS LOGO)*/
+  }
 }
 
 /*Small Tablet to big tablet:from 768pxx to 1023px*/
 @media only screen and (max-width:1023px){
-
+    body{
+      font-size: 18px; /*check the style.css its 20px */
+    }
+    section  {
+      padding: 60px 0;
+    }
+    .aboutcopy {
+      width: 80%;
+      margin-left: 10%;
+    }
 }
 
 /*Small phones to Small Tablets: from 481px to 767*/

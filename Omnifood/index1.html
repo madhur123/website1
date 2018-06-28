@@ -26,22 +26,22 @@
         <div class="row">
           <img src="resources/img/siemens.png" alt="Omnifood logo" class="logo">
           <ul class="main-nav">
-          <li><a href="# ">Food Delivery</a></li>
-          <li><a href="#">How it works</a></li>
+          <li><a href="#Home">
           <li><a href="#About">ABOUT US</a></li>
-          <li><a href="#">LOGIN</a></li>
+          <li><a href="#Contact">CONTACT US</a></li>
+          <li><a href="#Log">LOGIN</a></li>
 
           </ul>
       </div>
       </nav>
       <div class="hero-text-box">
         <h1>Siemens Gamesa Renewable Energy : TOPS</h1>
-        <a class="btn btn-full" href="#">I'm hungry</a>
-        <a class="btn btn-ghost" href="#">Show me more</a>
+      <!--  <a class="btn btn-full" href="#">I'm hungry</a>
+        <a class="btn btn-ghost" href="#">Show me more</a> -->
       </div>
     </header> <!--Header coding ends -->
 
-    <section class="section-about" id="About">
+    <section class = "section-about" id ="About">
       <div class="row">
         <h2><strong>ABOUT US</strong></h2>
         <p class="aboutcopy"> <!--PARAGRAPH  -->
@@ -52,8 +52,68 @@
       </div>
     </section>
 
+<!-- LOGIN FORM CODING BEGINS -->
+      <section class = "section-login" id ="Log">
+          <h2>LOGIN</h2>
+          <form class = "login123-content animate" action= "#">
+            <div class = "imgcontainer">
+              <img src="resources/img/usericon.png" alt="Icon" class = "usericon">
+            </div>
+            <div class="container">
+              <div class = "row">
+              <label for="email"><h4>Email Address</h4></label>
+              <input type="email" placeholder="name@siemens.com" name="email" id="email" required>
+            </div>
+            <div class = "row">
+              <label for="pass"><h4>Password</h4></label>
+              <input type="password" placeholder="Password" name="password" id="pass" required>
+            </div><br>
+              <button type="submit">Login</button>
 
 
+            </div>
+          </form>
+
+      </section><!-- LOGIN FORM coding ends-->
+
+<section class="section-contact" id = "Contact">
+  <div class= "row">
+    <h2>CONTACT US</h2>
+  </div>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <section class = "section-login" id="Login">
+      <div class = "row">
+          <h3>CONTACT-FORM</h3>
+      </div>
+        <div class="row">
+        <form method="post" action="#" class = "login-form">
+            <div class = "row">
+              <div class = "col span-1-of-3">
+                <label for="InputEmail">Email Address</label>
+              </div>
+              <div class = "col span-2-of-3">
+                <input type="email" name="emailid" id="InputEmail" placeholder="name@siemens.com" required><br><br>
+              </div>
+           </div>
+          <label for="InputPassword">Password</label>
+          <input type="password" name="pass" id="InputPassword" placeholder="Password" required><br>
+        </form>
+
+      </div> -->
     <!--
     <section class="section-form" id="Log"> --><!-- Section defined to make login form-->
 
@@ -78,7 +138,3 @@
           </form>
           </div>
         </section> -->
-
-
-  </body>
-</html>
